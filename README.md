@@ -5,7 +5,7 @@ Overview of Stellar Anchors and integration examples.
 - [1. Overview](#1-overview)
   - [1.1. Issuance](#11-issuance)
 - [2. Deposits and Withdrawals](#2-deposits-and-withdrawals)
-- [3. SEPs](#3-seps)
+- [3. SEPs mentioned in this document](#3-seps-mentioned-in-this-document)
 - [4. Integrating](#4-integrating)
   - [4.1. Fetch stellar.toml](#41-fetch-stellartoml)
   - [4.2. Get auth token](#42-get-auth-token)
@@ -107,15 +107,15 @@ On `TESTNET` there are a few Anchors, but they're mostly testing/development ver
 as `TESTNET` is Stellar's test network, where there's no real money involved and
 you can get funded test accounts for free.
 
-## 3. SEPs
+## 3. SEPs mentioned in this document
 
-- [SEP-1](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0001.md): fully compliant
-- [SEP-2](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0002.md): not supported
-- [SEP-6](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0006.md): fully compliant, requires account to be already verified, see notes below
-- [SEP-10](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0010.md): fully compliant
-- [SEP-12](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0012.md): not supported
-- [SEP-24](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0024.md): fully compliant
-- [SEP-31](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0031.md): being tested on testnet
+- [SEP-1](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0001.md)
+- [SEP-2](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0002.md)
+- [SEP-6](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0006.md)
+- [SEP-10](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0010.md)
+- [SEP-12](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0012.md)
+- [SEP-24](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0024.md)
+- [SEP-31](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0031.md)
 
 ## 4. Integrating
 
@@ -134,7 +134,7 @@ Python example on how to fetch the testnet `stellar.toml`:
 import requests
 import toml
 
-stellar_toml = toml.loads(requests.get('https://clpx.finance/.well-known/stellar.toml').text)
+stellar_toml = toml.loads(requests.get('https://<home_domain>/.well-known/stellar.toml').text)
 ```
 
 ### 4.2. Get auth token
