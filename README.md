@@ -3,7 +3,7 @@ Overview of Stellar Anchors and integration examples.
 # Summary
 
 - [1. Overview](#1-overview)
-  - [1.1. Issuanve](#11-issuance)
+  - [1.1. Issuance](#11-issuance)
 - [2. Deposits and Withdrawals](#2-deposits-and-withdrawals)
 - [3. SEPs](#3-seps)
 - [4. Integrating](#4-integrating)
